@@ -109,6 +109,9 @@ pip install -e .
 
 ```sh
 pip install -e .[dev]
+
+# Install pre-commit hooks:
+pre-commit install
 ```
 
 **OPTION D.** Install from **pre-built package** files (for **PRODUCTION**):
