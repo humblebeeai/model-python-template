@@ -1,7 +1,7 @@
 services:
   model:
     volumes:
-      - "./:${PROJECT_DIR:-/home/user/workspaces/projects/model.python-template}"
+      - "./:${PROJECT_DIR:-/home/user/workspaces/projects/model-python-template}"
       - "./scripts/docker/docker-entrypoint.sh:/usr/local/bin/docker-entrypoint.sh"
       - "./volumes/.vscode-server:/home/user/.vscode-server"
     # deploy:

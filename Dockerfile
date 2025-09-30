@@ -5,7 +5,7 @@ ARG PYTHON_VERSION=3.10
 ARG BASE_IMAGE=python:${PYTHON_VERSION}-slim-trixie
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG PROJECT_SLUG="model.python-template"
+ARG PROJECT_SLUG="model-python-template"
 
 
 ## Here is the builder image:

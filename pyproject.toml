@@ -39,13 +39,15 @@ dynamic = ["version", "dependencies", "optional-dependencies"]
 [tool.setuptools.dynamic]
 version = { attr = "simple_model.__version__.__version__" }
 dependencies = { file = "./requirements.txt" }
-# optional-dependencies.gpu = { file = ["./requirements/requirements.gpu.txt"] }
-optional-dependencies.test = { file = ["./requirements/requirements.test.txt"] }
-optional-dependencies.build = { file = [
-	"./requirements/requirements.build.txt",
-] }
-optional-dependencies.docs = { file = ["./requirements/requirements.docs.txt"] }
-optional-dependencies.dev = { file = [
+
+[tool.setuptools.dynamic.optional-dependencies]
+# gpu = { file = ["./requirements/requirements.gpu.txt"] }
+
+# Optional dependencies for DEVELOPMENT
+test = { file = ["./requirements/requirements.test.txt"] }
+build = { file = ["./requirements/requirements.build.txt"] }
+docs = { file = ["./requirements/requirements.docs.txt"] }
+dev = { file = [
 	"./requirements/requirements.test.txt",
 	"./requirements/requirements.build.txt",
 	"./requirements/requirements.docs.txt",
@@ -57,8 +59,8 @@ optional-dependencies.dev = { file = [
 # venv = ".venv"
 
 [project.urls]
-Homepage = "https://github.com/bybatkhuu/model.python-template"
+Homepage = "https://github.com/bybatkhuu/model-python-template"
 Documentation = "https://pymodel-docs.bybatkhuu.dev"
-Repository = "https://github.com/bybatkhuu/model.python-template.git"
-Issues = "https://github.com/bybatkhuu/model.python-template/issues"
-Changelog = "https://github.com/bybatkhuu/model.python-template/blob/main/CHANGELOG.md"
+Repository = "https://github.com/bybatkhuu/model-python-template.git"
+Issues = "https://github.com/bybatkhuu/model-python-template/issues"
+Changelog = "https://github.com/bybatkhuu/model-python-template/blob/main/CHANGELOG.md"

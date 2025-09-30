@@ -1,6 +1,6 @@
 services:
   model:
-    image: bybatkhuu/model.python-template:latest-gpu
+    image: bybatkhuu/model-python-template:latest-gpu
     runtime: nvidia
     build:
       context: .
@@ -9,7 +9,7 @@ services:
       NVIDIA_VISIBLE_DEVICES: ${NVIDIA_VISIBLE_DEVICES:-all}
       CUDA_VISIBLE_DEVICES: ${CUDA_VISIBLE_DEVICES:-all}
     volumes:
-      - "./:${PROJECT_DIR:-/home/user/workspaces/projects/model.python-template}"
+      - "./:${PROJECT_DIR:-/home/user/workspaces/projects/model-python-template}"
       - "./scripts/docker/docker-entrypoint.sh:/usr/local/bin/docker-entrypoint.sh"
       - "./volumes/.vscode-server:/home/user/.vscode-server"
     # deploy:

@@ -4,7 +4,7 @@ title: Configuration
 
 # ⚙️ Configuration
 
-[**`templates/configs/config.yml`**](https://github.com/bybatkhuu/model.python-template/blob/main/templates/configs/config.yml):
+[**`templates/configs/config.yml`**](https://github.com/bybatkhuu/model-python-template/blob/main/templates/configs/config.yml):
 
 ```yaml
 --8<-- "./templates/configs/config.yml"
@@ -12,7 +12,7 @@ title: Configuration
 
 ## 🌎 Environment Variables
 
-[**`.env.example`**](https://github.com/bybatkhuu/model.python-template/blob/main/.env.example):
+[**`.env.example`**](https://github.com/bybatkhuu/model-python-template/blob/main/.env.example):
 
 ```sh
 --8<-- "./.env.example"
