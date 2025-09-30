@@ -46,16 +46,16 @@ cd ~/workspaces/projects
 **OPTION A.** Clone the repository:
 
 ```sh
-git clone https://github.com/bybatkhuu/model.python-template.git && \
-    cd model.python-template && \
+git clone https://github.com/bybatkhuu/model-python-template.git && \
+    cd model-python-template && \
     git checkout cookiecutter
 ```
 
 **OPTION B.** Clone the repository (for **DEVELOPMENT**: git + ssh key):
 
 ```sh
-git clone git@github.com:bybatkhuu/model.python-template.git && \
-    cd model.python-template && \
+git clone git@github.com:bybatkhuu/model-python-template.git && \
+    cd model-python-template && \
     git checkout cookiecutter
 ```
 
@@ -84,7 +84,7 @@ cookiecutter -f .
 ```bash
 cd [PROJECT_NAME]
 # For example:
-cd model.python-template
+cd model-python-template
 ```
 
 👍

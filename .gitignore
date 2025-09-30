@@ -610,7 +610,7 @@ results/
 output/
 outputs/
 .benchmarks/
-model.python-template/
+model-python-template/
 
 # Files:
 log
@@ -628,7 +628,7 @@ results
 output
 outputs
 .benchmarks
-model.python-template
+model-python-template
 *.bak
 example.py
 test.py
