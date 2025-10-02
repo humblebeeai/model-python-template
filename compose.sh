@@ -154,7 +154,7 @@ _doUpdate()
 	fi
 
 	# shellcheck disable=SC2068
-	docker compose pull ${@:-} || exit 2
+	docker compose pull --policy always ${@:-} || exit 2
 	# shellcheck disable=SC2046
 	docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc) > /dev/null 2>&1 || true
 
@@ -216,7 +216,7 @@ main()
 		clean | clear)
 			shift
 			_doClean "${@:-}";;
-		update)
+		update | pull)
 			shift
 			_doUpdate "${@:-}";;
 		*)
