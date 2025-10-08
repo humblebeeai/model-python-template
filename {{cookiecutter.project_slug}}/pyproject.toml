@@ -45,9 +45,7 @@ dependencies = { file = "./requirements.txt" }
 
 # Optional dependencies for DEVELOPMENT
 test = { file = ["./requirements/requirements.test.txt"] }
-build = { file = [
-	"./requirements/requirements.build.txt",
-] }
+build = { file = ["./requirements/requirements.build.txt"] }
 docs = { file = ["./requirements/requirements.docs.txt"] }
 dev = { file = [
 	"./requirements/requirements.test.txt",
