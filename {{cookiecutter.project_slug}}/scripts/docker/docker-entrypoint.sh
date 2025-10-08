@@ -4,7 +4,7 @@ set -euo pipefail
 
 echo "[INFO]: Running '${PROJECT_SLUG}' docker-entrypoint.sh..."
 
-_doStart()
+_run()
 {
 	if [ -n "${JUPYTERLAB_TOKEN:-}" ]; then
 		echo -e "c.IdentityProvider.token = '${JUPYTERLAB_TOKEN}'" >> "/home/${USER}/.jupyter/jupyter_server_config.py" || exit 2
@@ -67,7 +67,7 @@ main()
 	## Parsing input:
 	case ${1:-} in
 		"" | -s | --start | start | --run | run)
-			_doStart;;
+			_run;;
 			# shift;;
 		-b | --bash | bash | /bin/bash)
 			shift
