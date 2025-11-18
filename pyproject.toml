@@ -59,8 +59,8 @@ dev = { file = [
 # venv = ".venv"
 
 [project.urls]
-Homepage = "https://github.com/bybatkhuu/model-python-template"
+Homepage = "https://github.com/humblebeeai/model-python-template"
 Documentation = "https://pymodel-docs.bybatkhuu.dev"
-Repository = "https://github.com/bybatkhuu/model-python-template.git"
-Issues = "https://github.com/bybatkhuu/model-python-template/issues"
-Changelog = "https://github.com/bybatkhuu/model-python-template/blob/main/CHANGELOG.md"
+Repository = "https://github.com/humblebeeai/model-python-template.git"
+Issues = "https://github.com/humblebeeai/model-python-template/issues"
+Changelog = "https://github.com/humblebeeai/model-python-template/blob/main/CHANGELOG.md"
