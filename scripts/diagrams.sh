@@ -48,8 +48,8 @@ _usage_help() {
 USAGE: ${0} [options]
 
 OPTIONS:
-    -m, --module-name [NAME]    Module name. Default: 'beans_logging'
-    -d, --module-dir [DIR]      Module directory. Default: './src/beans_logging'
+    -m, --module-name [NAME]    Module name. Default: 'simple_model'
+    -d, --module-dir [DIR]      Module directory. Default: './src/simple_model'
     -o, --output-dir [DIR]      Output directory. Default: './docs/diagrams'
     -h, --help                  Show this help message.
 
