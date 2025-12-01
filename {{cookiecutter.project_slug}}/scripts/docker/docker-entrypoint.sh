@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 
@@ -80,7 +80,7 @@ main()
 			fi
 			exit 0;;
 		*)
-			echo "[ERROR]: Failed to parsing input -> ${*}"
+			echo "[ERROR]: Failed to parsing input -> ${*}" >&2
 			echo "[INFO]: USAGE: ${0}  -s, --start, start | -b, --bash, bash, /bin/bash"
 			exit 1;;
 	esac
