@@ -181,7 +181,7 @@ COMMANDS:
     update | pull
 
 OPTIONS:
-  -h, --help    Show this help message.
+    -h, --help    Show this help message.
 EOF
 }
 
