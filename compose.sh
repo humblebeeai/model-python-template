@@ -178,7 +178,7 @@ COMMANDS:
     enter
     images
     clean | clear
-    update | pull
+    update | pull | download
 
 OPTIONS:
     -h, --help    Show this help message.
@@ -245,7 +245,7 @@ while [ $# -gt 0 ]; do
 			shift
 			_clean "${@:-}"
 			exit 0;;
-		update | pull)
+		update | pull | download)
 			shift
 			_update "${@:-}"
 			exit 0;;
