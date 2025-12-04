@@ -60,7 +60,7 @@ dev = { file = [
 
 [project.urls]
 Homepage = "https://github.com/humblebeeai/model-python-template"
-Documentation = "https://pymodel-docs.bybatkhuu.dev"
+Documentation = "https://humblebeeai.github.io/model-python-template"
 Repository = "https://github.com/humblebeeai/model-python-template.git"
 Issues = "https://github.com/humblebeeai/model-python-template/issues"
 Changelog = "https://github.com/humblebeeai/model-python-template/blob/main/CHANGELOG.md"

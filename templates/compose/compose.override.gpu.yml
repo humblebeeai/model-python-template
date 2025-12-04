@@ -1,6 +1,6 @@
 services:
   model:
-    image: bybatkhuu/model-python-template:latest-gpu
+    image: humblebeeai/model-python-template:latest-gpu
     runtime: nvidia
     build:
       context: .
