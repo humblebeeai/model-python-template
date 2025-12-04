@@ -1,6 +1,6 @@
 services:
   model:
-    image: bybatkhuu/model-python-template:latest
+    image: humblebeeai/model-python-template:latest
     build:
       context: .
     restart: unless-stopped

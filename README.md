@@ -1,8 +1,8 @@
 # Model (AI/ML) Template
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bybatkhuu/model-python-template/2.build-publish.yml?logo=GitHub)](https://github.com/bybatkhuu/model-python-template/actions/workflows/2.build-publish.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bybatkhuu/model-python-template?logo=GitHub&color=blue)](https://github.com/bybatkhuu/model-python-template/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/humblebeeai/model-python-template/2.build-publish.yml?logo=GitHub)](https://github.com/humblebeeai/model-python-template/actions/workflows/2.build-publish.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/humblebeeai/model-python-template?logo=GitHub&color=blue)](https://github.com/humblebeeai/model-python-template/releases)
 
 This is a template repository for AI/ML model projects.
 
@@ -27,12 +27,12 @@ This is a template repository for AI/ML model projects.
 
 - You can use this template repository as reference to create a new repository with the same structure or clone the repository to start a new project. It will help you to organize your project structure and files. It works out of the box for most of the AI/ML projects.
 - You can customize (remove, modify or add) the files and directories as needed to meet your project requirements.
-- If you want to use the template repository directly, just click the **[Use this template](https://github.com/new?template_name=model-python-template&template_owner=bybatkhuu)** button and follow the instructions.
-- You can use **cookiecutter** to generate a new project from **[cookiecutter](https://github.com/bybatkhuu/model-python-template/tree/cookiecutter)** branch:
+- If you want to use the template repository directly, just click the **[Use this template](https://github.com/new?template_name=model-python-template&template_owner=humblebeeai)** button and follow the instructions.
+- You can use **cookiecutter** to generate a new project from **[cookiecutter](https://github.com/humblebeeai/model-python-template/tree/cookiecutter)** branch:
 
     ```sh
     # Clone the cookiecutter branch:
-    git clone -b cookiecutter https://github.com/bybatkhuu/model-python-template.git
+    git clone -b cookiecutter https://github.com/humblebeeai/model-python-template.git
 
     # Install cookiecutter:
     pip install cookiecutter
@@ -79,20 +79,20 @@ cd ~/workspaces/projects
 **OPTION A.** Clone the repository:
 
 ```sh
-git clone https://github.com/bybatkhuu/model-python-template.git && \
+git clone https://github.com/humblebeeai/model-python-template.git && \
     cd model-python-template
 ```
 
 **OPTION B.** Clone the repository (for **DEVELOPMENT**: git + ssh key):
 
 ```sh
-git clone git@github.com:bybatkhuu/model-python-template.git && \
+git clone git@github.com:humblebeeai/model-python-template.git && \
     cd model-python-template
 ```
 
 **OPTION C.** Download source code:
 
-1. Download archived **zip** file from [**releases**](https://github.com/bybatkhuu/model-python-template/releases).
+1. Download archived **zip** file from [**releases**](https://github.com/humblebeeai/model-python-template/releases).
 2. Extract it into the projects directory.
 
 ### 3. 📦 Install the package
@@ -102,7 +102,7 @@ git clone git@github.com:bybatkhuu/model-python-template.git && \
 **OPTION A.** Install directly from **GitHub** repository:
 
 ```sh
-pip install git+https://github.com/bybatkhuu/model-python-template.git
+pip install git+https://github.com/humblebeeai/model-python-template.git
 ```
 
 **OPTION B.** Install from the downloaded **source code**:
@@ -125,7 +125,7 @@ pre-commit install
 
 **OPTION D.** Install from **pre-built package** files (for **PRODUCTION**):
 
-1. Download **`.whl`** or **`.tar.gz`** file from [**releases**](https://github.com/bybatkhuu/model-python-template/releases).
+1. Download **`.whl`** or **`.tar.gz`** file from [**releases**](https://github.com/humblebeeai/model-python-template/releases).
 2. Install with pip:
 
 ```sh
