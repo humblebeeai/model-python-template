@@ -18,12 +18,12 @@ if ! command -v docker >/dev/null 2>&1; then
 fi
 
 if ! docker info > /dev/null 2>&1; then
-	echo "[ERROR]: Unable to communicate with the docker daemon. Check docker is running or check your account added to docker group!"
+	echo "[ERROR]: Unable to communicate with the docker daemon. Check docker is running or check your account added to docker group!" >&2
 	exit 1
 fi
 
 if ! docker compose > /dev/null 2>&1; then
-	echo "[ERROR]: 'docker compose' not found or not installed!"
+	echo "[ERROR]: 'docker compose' not found or not installed!" >&2
 	exit 1
 fi
 ## --- Base --- ##
@@ -83,13 +83,8 @@ _restart()
 
 _logs()
 {
-	if [ -n "${1:-}" ]; then
-		# docker compose logs -f --tail 100 ${@} || exit 2
-		# shellcheck disable=SC2068
-		docker compose ps -q ${@} | xargs -n 1 docker logs -f -n 100 || exit 2
-	else
-		docker compose logs -f --tail 100 || exit 2
-	fi
+	# shellcheck disable=SC2068
+	docker compose logs -f --tail 100 ${@} || exit 2
 }
 
 _list()
@@ -105,17 +100,18 @@ _ps()
 
 _stats()
 {
-	# shellcheck disable=SC2046
-	docker stats $(docker compose ps -q) || exit 2
+	# shellcheck disable=SC2068
+	docker compose stats ${@:-} || exit 2
 }
 
 _exec()
 {
 	if [ -z "${1:-}" ]; then
-		echo "[ERROR]: Not found any input!" >&2
+		echo "[ERROR]: Not found any arguments for exec command!" >&2
 		exit 1
 	fi
 
+	echo "[INFO]: Executing command inside '${_DEFAULT_SERVICE}' container..."
 	# shellcheck disable=SC2068
 	docker compose exec "${_DEFAULT_SERVICE}" ${@} || exit 2
 }
@@ -127,7 +123,7 @@ _enter()
 		_service=${1}
 	fi
 
-	echo "[INFO]: Entering '${_service}' container..."
+	echo "[INFO]: Entering inside '${_service}' container..."
 	docker compose exec "${_service}" /bin/bash || exit 2
 }
 
