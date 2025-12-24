@@ -6,7 +6,7 @@
 
 ## What's Changed
 ### 📝 Documentation
-* :technologist: Refactor installation instructions: update pip install… by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/29
+* :technologist: Refactor installation instructions: update pip install… by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/29
 ### 📦 Dependencies
 * ⬆️ Update pytest-cov requirement from <7.0.0,>=5.0.0 to >=5.0.0,<8.0.0 by @dependabot[bot] in https://github.com/bybatkhuu/model-python-template/pull/28
 
@@ -35,7 +35,7 @@
 
 ## What's Changed
 ### 👷 CI/CD
-* Dev by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/27
+* Dev by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/27
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v3.0.8...v3.0.9
@@ -46,7 +46,7 @@
 
 ## What's Changed
 ### 🐛 Fixes
-* :broom: Remove version check step from build workflow by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/25
+* :broom: Remove version check step from build workflow by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/25
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v3.0.6...v3.0.7
@@ -57,7 +57,7 @@
 
 ## What's Changed
 ### 💬 Other
-* :green_heart: Add version check step to build workflow by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/24
+* :green_heart: Add version check step to build workflow by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/24
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v3.0.5...v3.0.6
@@ -92,7 +92,7 @@
 
 ## What's Changed
 ### 💥 Breaking Changes
-* :boom: update environment configuration and dependencies by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/20
+* :boom: update environment configuration and dependencies by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/20
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v1.0.0...v2.0.0
@@ -103,9 +103,9 @@
 
 ## What's Changed
 ### 📝 Documentation
-* Refactor README and update logging configuration by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/19
+* Refactor README and update logging configuration by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/19
 ### 💬 Other
-* Update pre-commit configuration and dependencies by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/18
+* Update pre-commit configuration and dependencies by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/18
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v0.0.4...v1.0.0
@@ -116,13 +116,13 @@
 
 ## What's Changed
 ### 🐛 Fixes
-* Refactor model directory handling and update documentation by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/17
+* Refactor model directory handling and update documentation by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/17
 ### 📝 Documentation
-* Enhance documentation headers with emoji for improved readability by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/13
-* Update README and installation documentation for improved cloning instructions by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/15
-* Update README for clarity and usage instructions by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/16
+* Enhance documentation headers with emoji for improved readability by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/13
+* Update README and installation documentation for improved cloning instructions by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/15
+* Update README for clarity and usage instructions by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/16
 ### 🔨 Scripts
-* Update VSCode settings and clarify Makefile target names by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/14
+* Update VSCode settings and clarify Makefile target names by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/14
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v0.0.3...v0.0.4
@@ -133,9 +133,9 @@
 
 ## What's Changed
 ### 📝 Documentation
-* Update documentation and mkdocs configuration by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/10
-* Improve error messages and add diagram generation script by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/11
-* Update documentation and add diagram generation scripts by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/12
+* Update documentation and mkdocs configuration by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/10
+* Improve error messages and add diagram generation script by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/11
+* Update documentation and add diagram generation scripts by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/12
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v0.0.2...v0.0.3
@@ -146,7 +146,7 @@
 
 ## What's Changed
 ### 📝 Documentation
-* Update documentation, improve scripts, and modify project structure by @bybatkhuu in https://github.com/bybatkhuu/model-python-template/pull/9
+* Update documentation, improve scripts, and modify project structure by @humblebeeai in https://github.com/bybatkhuu/model-python-template/pull/9
 
 
 **Full Changelog**: https://github.com/bybatkhuu/model-python-template/compare/v0.0.1...v0.0.2
