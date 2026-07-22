@@ -191,23 +191,6 @@ repos:
         entry: pyright
         files: \.pyi?$
 
-  # --- Tests ---
-  # - repo: local
-  #   hooks:
-  #     - id: pytest-collect
-  #       name: "🧪 pytest-collect (local) - Validate test formatting"
-  #       language: system
-  #       entry: "python -m pytest --collect-only"
-  #       pass_filenames: false
-  #       always_run: true
-
-  #     - id: pytest
-  #       name: "🧪 pytest (local) - Run tests"
-  #       language: system
-  #       entry: "./scripts/test.sh -l -v -c"
-  #       pass_filenames: false
-  #       always_run: true
-
   # --- Cleanup ---
   # - repo: local
   #   hooks:
