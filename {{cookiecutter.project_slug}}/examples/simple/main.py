@@ -14,7 +14,6 @@ from numpy.typing import NDArray
 # Internal modules
 from {{cookiecutter.module_name}} import SimpleModel
 
-
 logger = logging.getLogger(__name__)
 
 
