@@ -1,0 +1,44 @@
+name: Pre-Commit
+
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  pre-commit:
+    name: Run pre-commit checks
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          ref: {% raw %}${{ github.event.pull_request.head.sha }}{% endraw %}
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "{{cookiecutter.python_version}}"
+      - name: Cache pip
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/pip
+          key: pip-{% raw %}${{ runner.os }}-${{ hashFiles('requirements.txt') }}{% endraw %}
+      - name: Install pre-commit and dependencies
+        run: |
+          python -m pip install -U pip
+          python -m pip install -r ./requirements.txt
+          python -m pip install -U pre-commit pyright pytest
+      - name: Cache pre-commit
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-{% raw %}${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}{% endraw %}
+      - name: Run pre-commit on all files
+        run: |
+          pre-commit run --all-files --show-diff-on-failure --color=always
