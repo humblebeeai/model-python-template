@@ -40,7 +40,7 @@ RUN --mount=type=cache,target=/opt/conda/pkgs,sharing=private \
 		ca-certificates \
 		build-essential \
 		wget && \
-	_MINICONDA_VERSION=py310_25.11.1-1 && \
+	_MINICONDA_VERSION=py311_26.7.1-1 && \
 	if [ "${_BUILD_TARGET_ARCH}" == "x86_64" ]; then \
 		_MINICONDA_FILENAME=Miniconda3-${_MINICONDA_VERSION}-Linux-x86_64.sh && \
 		export _MINICONDA_URL=https://repo.anaconda.com/miniconda/${_MINICONDA_FILENAME}; \

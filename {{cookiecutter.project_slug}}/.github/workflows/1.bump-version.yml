@@ -21,7 +21,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
-          python-version: "3.10"
+          python-version: "{{cookiecutter.python_version}}"
       - name: Install dependencies
         run: |
           python -m pip install -U pip
@@ -40,8 +40,8 @@ jobs:
         uses: actions/checkout@v7
       - name: Bump version
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          ./scripts/bump-version.sh -b=${{ inputs.bump_type }} -c -t -p
+          ./scripts/bump-version.sh -b={% raw %}${{ inputs.bump_type }}{% endraw %} -c -t -p

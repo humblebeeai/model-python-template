@@ -6,38 +6,21 @@ title: Installation
 
 ## 1. 📥 Download or clone the repository
 
-[TIP] Skip this step, if you're going to install the module directly from **git** repository.
-
-**1.1.** Prepare projects directory (if not exists):
+[TIP] Skip this step, if you're going to install the module directly from **GitHub** repository.
 
 ```sh
-# Create projects directory:
 mkdir -pv ~/workspaces/projects
-
-# Enter into projects directory:
 cd ~/workspaces/projects
+
+# HTTPS:
+git clone https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git
+# Or SSH (development):
+git clone git@github.com:{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git
+
+cd {{cookiecutter.repo_name}}
 ```
 
-**1.2.** Follow one of the below options **[A]**, **[B]** or **[C]**:
-
-**OPTION A.** Clone the repository:
-
-```sh
-git clone https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git && \
-    cd {{cookiecutter.repo_name}}
-```
-
-**OPTION B.** Clone the repository (for **DEVELOPMENT**: git + ssh key):
-
-```sh
-git clone git@github.com:{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git && \
-    cd {{cookiecutter.repo_name}}
-```
-
-**OPTION C.** Download source code:
-
-1. Download archived **zip** file from [**releases**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/releases).
-2. Extract it into the projects directory.
+Alternatively, download the source from the [**releases**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/releases) page and extract it into your projects directory.
 
 ## 2. 📦 Install the module
 
